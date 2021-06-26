@@ -7,21 +7,24 @@ import (
 )
 
 func (r *Resolver) BankAccounts(args *struct{ Filter *BankAccountFilterGql }) *[]models_gql.BankAccountGql {
+	if args.Filter != nil {
+
+	}
 
 	return &[]models_gql.BankAccountGql{
 		{
-			Title:      "First",
-			Id:         "1",
-			Value:      1.0,
-			CurrencyId: "$",
-			UserId:     1.0,
+			Title:    "First",
+			Id:       "1",
+			Value:    1.0,
+			Currency: "$",
+			UserName: "Andrew",
 		},
 		{
-			Title:      "Second",
-			Id:         "2",
-			Value:      2.0,
-			CurrencyId: "$",
-			UserId:     2.0,
+			Title:    "Second",
+			Id:       "2",
+			Value:    2.0,
+			Currency: "$",
+			UserName: "Andrew",
 		},
 	}
 }

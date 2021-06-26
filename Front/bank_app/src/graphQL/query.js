@@ -13,11 +13,11 @@ export const client = new ApolloClient({
 export const EXCHANGE_RATES = gql`
   query BankAccounts {
     bankAccounts(filter:{}){
-        GetTitle
-        GetUserId
-        GetCurrency
-        GetId
-        GetValue
+        GetTitle,
+        GetUser,
+        GetCurrency,
+        GetId,
+        GetValue,
   }
   }
 `;

@@ -20,7 +20,7 @@ const schema = `
              GetId: String!
              GetValue: Float!
              GetCurrency: String!
-			 GetUserId: Float!
+			 GetUser: String!
         }
 		
 		input BankAccountFilterGql{

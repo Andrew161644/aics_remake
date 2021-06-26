@@ -1,11 +1,11 @@
 package models_gql
 
 type BankAccountGql struct {
-	Title      string  `json:"title"`
-	Id         string  `json:"id"`
-	Value      float64 `json:"value"`
-	CurrencyId string  `json:"currencyId"`
-	UserId     float64 `json:"userId"`
+	Title    string  `json:"title"`
+	Id       string  `json:"id"`
+	Value    float64 `json:"value"`
+	Currency string  `json:"currencyId"`
+	UserName string  `json:"user"`
 }
 
 func (b BankAccountGql) GetTitle() string {
@@ -19,9 +19,11 @@ func (b BankAccountGql) GetId() string {
 func (b BankAccountGql) GetValue() float64 {
 	return b.Value
 }
+
 func (b BankAccountGql) GetCurrency() string {
-	return b.CurrencyId
+	return b.Currency
 }
-func (b BankAccountGql) GetUserId() float64 {
-	return b.UserId
+
+func (b BankAccountGql) GetUser() string {
+	return b.UserName
 }
