@@ -1,18 +1,30 @@
-import PropTypes, { func } from "prop-types";
 import React from "react";
-import {useBankPage} from "../blocks/mainField/bank_page/bank_page_provider";
+import BankAccountItem from "./bank_account_item";
+import {useQuery} from "@apollo/client";
+import {EXCHANGE_RATES} from "../graphQL/query";
 
 
-function BankAccountItem({account, index}){
-    const bankPage = useBankPage()
+function Bank_account_list() {
+
+    /*const { loading, error, data } = useQuery(EXCHANGE_RATES);*/
+    const data = [
+        {Title:"title", Value:"value", Currency: "$"},
+        {Title:"title2", Value:"value2", Currency: "$"},
+        {Title:"title2", Value:"value2", Currency: "$"},
+    ];
+
     return (
-        <li onClick={() => bankPage.changeAcc(account)}>
-            {index} {account.GetTitle} {account.GetValue} {account.GetCurrency}
-        </li>
+        <ul>
+            {data.map((acc, index) => {
+                return (
+                    <BankAccountItem account={acc} key={acc.Id} index={index}/>
+                )
+            })}
+        </ul>
     );
 }
-BankAccountItem.propTypes ={
-    account: PropTypes.object.isRequired,
-    index: PropTypes.number,
-}
-export default BankAccountItem;
+
+
+export default Bank_account_list
+
+

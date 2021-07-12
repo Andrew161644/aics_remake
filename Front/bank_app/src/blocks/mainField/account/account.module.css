@@ -1,0 +1,40 @@
+a:link,:active,:visited{text-decoration: none;}
+.account{
+    padding: 1em;
+    background-color: white;
+}
+.card{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.card img{
+    width: 100%;
+
+}
+.topright {
+    color: honeydew;
+    position: absolute;
+    margin-top: 25px;
+    top: 8px;
+    right: 16px;
+    font-weight:750;
+    font-size: 30pt;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    margin-bottom: 20px;
+    left: 16px;
+    font-size: 20pt;
+}
+
+.topleft {
+    position: absolute;
+    top: 8px;
+    margin-top: 25px;
+    left: 16px;
+    font-size: 40pt;
+    font-weight:750;
+}

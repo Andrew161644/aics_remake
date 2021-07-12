@@ -12,13 +12,13 @@ function Bank_account_list() {
     if (error) return <p>Error :(</p>;
 
     return (
-        <ul>
+        <div>
             {data.bankAccounts.map((acc, index) => {
                 return (
                     <BankAccountItem account={acc} key={acc.GetId} index={index}/>
                 )
             })}
-        </ul>
+        </div>
     );
 }
 

@@ -1,0 +1,36 @@
+a:link,:active,:visited{text-decoration: none;}
+.profile{
+    padding: 1em;
+    background-color: white;
+}
+.profile h1{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 35pt;
+}
+.profile h2{
+    margin-bottom: 2px;
+    font-size: 30pt;
+}
+.profile h3{
+    margin-top: 2px;
+    font-size: 25pt;
+}
+
+.greeting{
+    margin-bottom: 2px;
+}
+.mudrostdnya{
+    color: grey;
+    font-size: 12pt;
+    margin-top: 1px;
+}
+
+.account{
+
+}
+.account:hover{
+    text-decoration: underline;
+    
+}
+

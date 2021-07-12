@@ -1,0 +1,35 @@
+
+.header{
+    display: grid;
+    background-color: darkgrey;
+    grid-template-columns: 5fr repeat(6,2fr);
+    grid-gap: 1em;
+    justify-items: start;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    height: auto;
+    padding: 1em;
+}
+
+.button{
+    font-size: 14pt;
+    font-weight: 600;
+    float: left; margin-top:15px;
+
+}
+.button a{
+    color:black;
+
+
+}
+.button a:hover{
+    text-shadow: 1px 1px 2px whitesmoke, 0 0 3px gray
+}
+
+.button a.active{
+    color:#ff6500 ;
+}
+
+    
